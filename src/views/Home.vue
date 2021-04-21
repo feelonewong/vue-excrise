@@ -14,6 +14,9 @@
         {{slotProps}}
       </template>
     </SlotDemo>
+    <hr />
+    <h3>3-14Mixin使用</h3>
+    <Mixin></Mixin>
   </div>
 </template>
 
@@ -21,7 +24,6 @@
 import CustomerVmodel from "./3Vue基本使用/3-7自定义vmodel";
 import NextTick from "./3Vue基本使用/3-8$nextTick";
 import SlotDemo from "./3Vue基本使用/3-9Slot的基本使用";
-
 export default {
   name: "Home",
   data() {
@@ -38,6 +40,7 @@ export default {
     CustomerVmodel,
     NextTick,
     SlotDemo,
+    Mixin: ()=>import("./3Vue基本使用/3-14mixin")
   },
 };
 </script>
