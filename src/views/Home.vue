@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <hr>
+    <h3>3.7v-model基本使用</h3>
+    {{name}}
+    <CustomerVmodel v-model="name" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import CustomerVmodel from "./3Vue基本使用/3-7自定义vmodel";
 export default {
   name: "Home",
+  data(){
+    return{
+      name:"123123"
+    }
+  },
   components: {
-    HelloWorld,
+    CustomerVmodel,
   },
 };
 </script>
